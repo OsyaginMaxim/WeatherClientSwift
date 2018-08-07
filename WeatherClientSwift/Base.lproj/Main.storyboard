@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginController" customModule="weatherClientSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Логин:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HMX-UW-UCc">
+                                <rect key="frame" x="70" y="323.5" width="235" height="40"/>
+                                <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6pk-6t-d8o"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Пароль:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w3d-WA-NyM">
+                                <rect key="frame" x="70" y="381.5" width="235" height="40"/>
+                                <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="oqx-91-vyc"/>
+                                </constraints>
+                                <color key="textColor" red="0.41568627450000001" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVh-JS-JDz">
+                                <rect key="frame" x="70" y="464" width="235" height="35"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="QKC-Wc-iVo"/>
+                                </constraints>
+                                <state key="normal" title="Вход">
+                                    <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2es-1F-EH5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HMX-UW-UCc" secondAttribute="trailing" constant="70" id="8MP-1M-A1Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w3d-WA-NyM" secondAttribute="trailing" constant="70" id="Ll9-NR-uRy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KVh-JS-JDz" secondAttribute="trailing" constant="70" id="Lpi-8e-daV"/>
+                            <constraint firstItem="HMX-UW-UCc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="QdC-ue-CXU"/>
+                            <constraint firstItem="w3d-WA-NyM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="gM4-m7-0uZ"/>
+                            <constraint firstItem="w3d-WA-NyM" firstAttribute="top" secondItem="HMX-UW-UCc" secondAttribute="bottom" constant="18" id="r5P-hG-YFi"/>
+                            <constraint firstItem="HMX-UW-UCc" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="tXE-Uz-QGw"/>
+                            <constraint firstItem="KVh-JS-JDz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="wNS-dq-9f1"/>
+                            <constraint firstItem="KVh-JS-JDz" firstAttribute="top" secondItem="w3d-WA-NyM" secondAttribute="bottom" constant="42.5" id="yn8-wD-QRr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="login" destination="HMX-UW-UCc" id="vk0-SS-4nB"/>
+                        <outlet property="loginButton" destination="KVh-JS-JDz" id="GYv-PF-Gn0"/>
+                        <outlet property="password" destination="w3d-WA-NyM" id="Al8-Db-w9V"/>
+                        <segue destination="3L7-GS-jag" kind="show" identifier="login" id="HtR-4A-ftt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="KaU-0R-pt7">
+            <objects>
+                <viewController id="Vca-fn-lh5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gpu-VS-qKR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cyl-He-yHA"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="JO2-OX-YPP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mPn-f5-fdL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1841" y="466"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="qrx-ou-fBo">
+            <objects>
+                <tabBarController id="3L7-GS-jag" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="at3-c0-dC8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="5ob-Vc-wpm" kind="relationship" relationship="viewControllers" id="taT-TR-Dnr"/>
+                        <segue destination="Vca-fn-lh5" kind="relationship" relationship="viewControllers" id="bt9-ad-23I"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vgg-a8-uSc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="892" y="134"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="pCL-4r-o13">
+            <objects>
+                <tableViewController id="5ob-Vc-wpm" customClass="WeatherTableController" customModule="weatherClientSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="iG9-fm-oVv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="5ob-Vc-wpm" id="9kU-Hh-YO1"/>
+                            <outlet property="delegate" destination="5ob-Vc-wpm" id="W3a-aK-KpQ"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="FAD-nP-9iR"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rpd-3U-BLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1836" y="-235"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,20 @@
+PODS:
+  - KeychainSwift (11.0.0)
+  - SwiftLint (0.26.0)
+
+DEPENDENCIES:
+  - KeychainSwift (~> 11.0)
+  - SwiftLint
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - KeychainSwift
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  KeychainSwift: bea6bd9f98af7b8d7ca4aa79fe105c00fab532db
+  SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
+
+PODFILE CHECKSUM: e30a7e19a56872af70748419088f9f01ab2ac222
+
+COCOAPODS: 1.5.3
